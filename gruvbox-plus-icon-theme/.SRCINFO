@@ -6,7 +6,6 @@ pkgbase = gruvbox-plus-icon-theme
 	arch = any
 	license = GPL3
 	makedepends = git
-	makedepends = fd
 	depends = gtk-update-icon-cache
 	provides = gruvbox-plus-icon-theme
 	conflicts = gruvbox-plus-icon-theme-git
