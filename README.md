@@ -2,10 +2,10 @@
 
 AUR packages I maintain
 
-## 📦Updating
+## 📦 Updating
 
 [Renovate](.github/renovate.json5) does the work for me, I just merge pull-requests
 
-## 📤Publishing
+## 📤 Publishing
 
 Run `aurpublish PACKAGE`
