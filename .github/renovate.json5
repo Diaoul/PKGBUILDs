@@ -10,7 +10,8 @@
       "customType": "regex",
       "fileMatch": ["(^|/)PKGBUILD$"],
       "matchStrings": [
-        "pkgver=(?<currentValue>.*).*# renovate: datasource=(?<datasource>.*) depName=(?<depName>.*)"
+        // https://regex101.com/r/X5tNPV/1
+        "pkgver=(?<currentValue>\\S+).*# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)"
       ],
       "extractVersionTemplate": "^v?(?<version>.*)$"
     }
