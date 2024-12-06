@@ -13,7 +13,7 @@ provides=(gruvbox-plus-icon-theme)
 conflicts=(gruvbox-plus-icon-theme-git)
 options=(!strip !emptydirs)
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
-sha256sums=('0c03a10607e090e0a1d10a415c8be200b11b9a1bdc46d6e189b0577de0e94339')
+sha256sums=('9a21eb59ed366c245cc8a42280249949c04d1beeb350128fad4c0f026d2257d8')
 
 package() {
   cd "gruvbox-plus-icon-pack-$pkgver"
