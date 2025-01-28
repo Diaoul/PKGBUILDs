@@ -1,4 +1,4 @@
-FROM docker.io/library/archlinux:base-devel@sha256:8999d2508a630f124deb8b4f7a493d03241dd684960832b23fb07ae5176c5cea
+FROM docker.io/library/archlinux:base-devel@sha256:be024e3a05d303481657494b132e01c42e77a3107efb50721987ecd99607c39a
 
 RUN pacman -Syu --needed --noconfirm pacman-contrib namcap git sudo && \
   useradd -m builder && \
