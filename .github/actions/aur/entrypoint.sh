@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "::group::Updating"
-sudo pacman -Syu --noconfirm
-echo "::endgroup::"
-
 # Set path
 WORKPATH=$GITHUB_WORKSPACE/$INPUT_PKGNAME
 HOME=/home/builder
@@ -15,10 +11,6 @@ mkdir gh-action
 cd gh-action
 cp -rfv "$GITHUB_WORKSPACE"/.git ./
 cp -fv "$WORKPATH"/* .
-echo "::endgroup::"
-
-echo "::group::Updating archlinux-keyring"
-sudo pacman -S --noconfirm archlinux-keyring
 echo "::endgroup::"
 
 echo "::group::Updating checksums on PKGBUILD"
