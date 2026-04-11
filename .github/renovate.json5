@@ -5,10 +5,11 @@
     ":semanticCommits",
     ":semanticCommitScope(deps)",
   ],
+  "automerge": true,
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["(^|/)PKGBUILD$"],
+      "managerFilePatterns": ["/(^|/)PKGBUILD$/"],
       "matchStrings": [
         // https://regex101.com/r/X5tNPV/1
         "pkgver=(?<currentValue>\\S+).*# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)"
