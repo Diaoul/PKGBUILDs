@@ -20,7 +20,7 @@ echo "::endgroup::"
 
 echo "::group::Installing depends using paru"
 source PKGBUILD
-paru -Syu --removemake --needed --noconfirm "${depends[@]}" "${makedepends[@]}"
+paru -S --removemake --needed --noconfirm "${depends[@]}" "${makedepends[@]}"
 echo "::endgroup::"
 
 echo "::group::Running makepkg"
