@@ -9,7 +9,7 @@ url=https://github.com/home-operations/yayamlls
 license=(MIT)
 options=(!strip)
 source=("$pkgname-$pkgver-linux-amd64.tar.gz::$url/releases/download/$pkgver/${pkgname}_${pkgver}_linux_amd64.tar.gz")
-sha256sums=('926e1d5a5da1e287ce8bc37d88f61e144f025d252107f572525e4c1185f845ed')
+sha256sums=('3982bc4c0cd5afb6cf0036f3c60faad629e409ec69bd7464601198804048edd6')
 
 package() {
   install -Dm755 yayamlls "$pkgdir/usr/bin/yayamlls"
